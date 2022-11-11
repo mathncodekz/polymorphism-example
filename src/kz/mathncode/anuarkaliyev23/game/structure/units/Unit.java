@@ -1,20 +1,14 @@
 package kz.mathncode.anuarkaliyev23.game.structure.units;
 
 public class Unit {
-    private int maxHealthPoints;
     private int healthPoints;
+    private int maxHealthPoints;
+    private int attackSpeed;
 
-    public Unit(int maxHitPoints, int hitPoints) {
-        this.maxHealthPoints = maxHitPoints;
-        this.healthPoints = hitPoints;
-    }
-
-    public int getMaxHealthPoints() {
-        return maxHealthPoints;
-    }
-
-    public void setMaxHealthPoints(int maxHealthPoints) {
+    public Unit(int healthPoints, int maxHealthPoints, int attackSpeed) {
+        this.healthPoints = healthPoints;
         this.maxHealthPoints = maxHealthPoints;
+        this.attackSpeed = attackSpeed;
     }
 
     public int getHealthPoints() {
@@ -25,11 +19,28 @@ public class Unit {
         this.healthPoints = healthPoints;
     }
 
+    public int getMaxHealthPoints() {
+        return maxHealthPoints;
+    }
+
+    public void setMaxHealthPoints(int maxHealthPoints) {
+        this.maxHealthPoints = maxHealthPoints;
+    }
+
+    public int getAttackSpeed() {
+        return attackSpeed;
+    }
+
+    public void setAttackSpeed(int attackSpeed) {
+        this.attackSpeed = attackSpeed;
+    }
+
     @Override
     public String toString() {
-        return "kz.mathncode.anuarkaliyev23.game.structure.units.Unit{" +
-                "maxHitPoints=" + maxHealthPoints +
-                ", hitPoints=" + healthPoints +
+        return "Unit{" +
+                "healthPoints=" + healthPoints +
+                ", maxHealthPoints=" + maxHealthPoints +
+                ", attackSpeed=" + attackSpeed +
                 '}';
     }
 }
