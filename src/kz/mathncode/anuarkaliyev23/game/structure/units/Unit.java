@@ -1,6 +1,6 @@
 package kz.mathncode.anuarkaliyev23.game.structure.units;
 
-public class Unit {
+public abstract class Unit {
     private int healthPoints;
     private int maxHealthPoints;
     private int attackSpeed;

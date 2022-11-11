@@ -5,6 +5,7 @@ import kz.mathncode.anuarkaliyev23.game.structure.items.GauntletOfStrength;
 import kz.mathncode.anuarkaliyev23.game.structure.items.HealthPotion;
 import kz.mathncode.anuarkaliyev23.game.structure.items.Item;
 import kz.mathncode.anuarkaliyev23.game.structure.units.Player;
+import kz.mathncode.anuarkaliyev23.game.structure.units.Unit;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,7 +16,6 @@ public class Main {
         Item gauntletOfStrength = new GauntletOfStrength(200);
         Item bagOfCash = new BagOfCash(150);
 
-
         Player player = new Player(100, 150, 3, 500);
 
         List<Item> items = new ArrayList<>();
@@ -23,7 +23,7 @@ public class Main {
         items.add(gauntletOfStrength);
 
         ItemShop shop = new ItemShop(items);
-        shop.sellItem(bagOfCash, player);
+        shop.sellItem(i, player);
 
         System.out.println(player);
         System.out.println(shop);

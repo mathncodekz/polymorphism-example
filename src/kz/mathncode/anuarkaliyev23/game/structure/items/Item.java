@@ -2,7 +2,8 @@ package kz.mathncode.anuarkaliyev23.game.structure.items;
 
 import kz.mathncode.anuarkaliyev23.game.structure.units.Player;
 
-public class Item {
+//Обычный класс, НО НЕЛЬЗЯ СОЗДАТЬ ОБЪЕКТ
+public abstract class Item {
     private int price;
 
     public int getPrice() {
